@@ -1,4 +1,4 @@
-from PIL import Image
+from PIL import Image # PIL (Python Imaging Library)
 import random
 import math
 
@@ -44,7 +44,6 @@ for y in range(imgy):
         j = -1
         for i in range(num_cells):
             d = 50 * math.hypot(nx[i] - x, ny[i] - y)
-            # print(d)
             if d == 0:
                 continue
             pw = power + antenna_gain - (pl_const + 22.0 * math.log10(d))
